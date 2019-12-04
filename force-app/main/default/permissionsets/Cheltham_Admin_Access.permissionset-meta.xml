@@ -204,6 +204,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>Book_Copy__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Book__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>

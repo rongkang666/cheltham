@@ -143,7 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Physical book</description>
+    <description>This object contains the borrow details of a Book like the Book Id, User Id, Dates etc</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -153,16 +153,14 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Book Copy</label>
+    <label>Borrow</label>
     <nameField>
-        <label>Book Copy Name</label>
-        <type>Text</type>
+        <displayFormat>{0000}</displayFormat>
+        <label>Borrow ID</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Book Copies</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Book__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <pluralLabel>Borrows</pluralLabel>
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
