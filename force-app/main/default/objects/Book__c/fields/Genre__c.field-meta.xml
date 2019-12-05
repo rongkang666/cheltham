@@ -4,7 +4,7 @@
     <description>Category the book falls under</description>
     <externalId>false</externalId>
     <label>Genre</label>
-    <length>50</length>
+    <length>25</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

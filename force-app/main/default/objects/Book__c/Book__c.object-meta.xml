@@ -155,8 +155,9 @@
     <enableStreamingApi>true</enableStreamingApi>
     <label>Book</label>
     <nameField>
-        <label>Book Name</label>
-        <type>Text</type>
+        <displayFormat>BID -{0000}</displayFormat>
+        <label>Book ID</label>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Books</pluralLabel>
     <searchLayouts/>
