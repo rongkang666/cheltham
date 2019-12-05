@@ -155,8 +155,10 @@
     <enableStreamingApi>true</enableStreamingApi>
     <label>Book Copy</label>
     <nameField>
-        <label>Book Copy Name</label>
-        <type>Text</type>
+        <displayFormat>BCID -{YYYY}-{MM}-{DD}-{0000}</displayFormat>
+        <label>Book Copy ID</label>
+        <type>AutoNumber</type>
+
     </nameField>
     <pluralLabel>Book Copies</pluralLabel>
     <searchLayouts>

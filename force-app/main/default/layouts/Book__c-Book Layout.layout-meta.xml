@@ -9,7 +9,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Name</field>
+                <field>Title__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -17,27 +17,26 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Edition__c</field>
+                <field>Summary__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-
-                <field>Summary__c</field>
+                <field>Genre__c</field>
             </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ISBN__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Genre__c</field>
+                <field>Edition__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Date_Published__c</field>
             </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
@@ -139,6 +138,8 @@
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>CREATEDBY_USER</fields>
+        <fields>LAST_UPDATE</fields>
         <relatedList>Book_Copy__c.Book__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
@@ -147,7 +148,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0p000000JxU7</masterLabel>
+        <masterLabel>00hN000000162CL</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
