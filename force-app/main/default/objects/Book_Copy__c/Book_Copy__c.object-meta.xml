@@ -158,9 +158,13 @@
         <displayFormat>BCID -{YYYY}-{MM}-{DD}-{0000}</displayFormat>
         <label>Book Copy ID</label>
         <type>AutoNumber</type>
+
     </nameField>
     <pluralLabel>Book Copies</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Book__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
