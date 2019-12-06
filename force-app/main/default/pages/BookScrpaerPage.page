@@ -1,0 +1,20 @@
+<apex:page standardController="Book__c" extensions="BookScraperController" lightningStylesheets="true" tabstyle="Book__c" recordSetVar="books">
+    <apex:form >
+        <apex:pageBlock mode="edit">
+            <apex:pageMessages />
+            <p>Input the Book ISBN number (10 or 13 ISBN number) below:</p>
+            
+            <apex:pageBlockSection >
+            
+                <apex:inputText value="{!isbn}"/>
+            
+            </apex:pageBlockSection>
+            
+             <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Commit" action="{!storeInfo}"/>
+            </apex:pageBlockButtons>
+            
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

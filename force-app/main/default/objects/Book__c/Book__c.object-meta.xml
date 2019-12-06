@@ -155,15 +155,16 @@
     <enableStreamingApi>true</enableStreamingApi>
     <label>Book</label>
     <nameField>
-        <displayFormat>BID -{0000}</displayFormat>
-        <label>Book ID</label>
-        <type>AutoNumber</type>
+        <label>Book Name</label>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Books</pluralLabel>
     <searchLayouts>
+        <listViewButtons>Scrap_Book</listViewButtons>
         <searchResultsAdditionalFields>Author__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Edition__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ISBN__c</searchResultsAdditionalFields>
+        <searchResultsCustomButtons>Scrap_Book</searchResultsCustomButtons>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
