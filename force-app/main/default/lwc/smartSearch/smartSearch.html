@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            What's in your mind?
+        </h2>
+
+        <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" 
+                label="Enter some key words"
+                onchange={handleChange}></lightning-input>
+       </div>
+    
+    </div>
+ 
+    <!--Data table-->
+    <div if:true={inputValue} style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+
+   
+</template>
