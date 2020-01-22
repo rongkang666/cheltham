@@ -5,22 +5,26 @@
         </h2>
 
         <div class="slds-p-around_medium lgc-bg">
+            <!--Search key input-->
                 <lightning-input type="text" 
                 label="Enter some key words"
                 onchange={handleChange}></lightning-input>
 
-                <lightning-button-group>
-                    <lightning-button label='search by tag'
-                    onclick={handleSearchByTag}>
-                    Search By Book Tag
-                    </lightning-button>
-                    <lightning-button label='search by book'
-                    onclick={handleSearchByBook}>
-                    Search By Book
-                    </lightning-button>
-                </lightning-button-group>
-
-                
+                <div class="slds-align_absolute-center">
+                        <lightning-button-group>
+                                <lightning-button label='Search by book tag'
+                                title={searchByTagBtnTitle}
+                                onclick={handleSearchByTag}>
+                                
+                                </lightning-button>
+                                <lightning-button label='Search by other book fields'
+                                title={searchByBookBtnTitle}
+                                onclick={handleSearchByBook}>
+                                
+                                </lightning-button>
+                            </lightning-button-group>
+            
+                </div>         
        </div>
     
     </div>
@@ -29,9 +33,11 @@
     <template if:true={showDataTable}>
         <div style="height: 300px;">
             <lightning-datatable
-                    key-field="id"
+                    key-field="Id"
                     data={data}
-                    columns={columns}>
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    onrowaction={navigateToRecordViewPage}>
             </lightning-datatable>
         </div>    
         

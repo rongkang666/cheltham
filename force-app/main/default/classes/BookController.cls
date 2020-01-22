@@ -12,7 +12,7 @@ public with sharing class BookController {
     }
    @AuraEnabled
    //return a list of books by book name or book summary, or book author
-   //or ISBN number. The search keyword can be part of these book fields
+   //or ISBN number. The search keyword can be part text of these book fields
     public static List<Book__c> getBooks(string keyword) {
         String key = '%' + keyword + '%';
 
