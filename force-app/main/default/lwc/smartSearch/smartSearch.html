@@ -8,18 +8,36 @@
                 <lightning-input type="text" 
                 label="Enter some key words"
                 onchange={handleChange}></lightning-input>
+
+                <lightning-button-group>
+                    <lightning-button label='search by tag'
+                    onclick={handleSearchByTag}>
+                    Search By Book Tag
+                    </lightning-button>
+                    <lightning-button label='search by book'
+                    onclick={handleSearchByBook}>
+                    Search By Book
+                    </lightning-button>
+                </lightning-button-group>
+
+                
        </div>
     
     </div>
  
-    <!--Data table-->
-    <div if:true={inputValue} style="height: 300px;">
-        <lightning-datatable
-                key-field="id"
-                data={data}
-                columns={columns}>
-        </lightning-datatable>
-    </div>
+    <!--Data display-->
+    <template if:true={showDataTable}>
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+        </div>    
+        
+    </template>
+
+    
 
    
 </template>
